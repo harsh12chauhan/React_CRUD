@@ -1,20 +1,11 @@
-import React,{useState} from 'react';
+import React from 'react';
 
-const AddUser=()=>{
-    const[name,setName] = useState('')
-
-    const handleSubmit=(e)=>{
-        e.preventDefault()
-        setName(e.target.value)
-    }
-    return (
-     <div>
-    <form onSubmit={handleSubmit}>
-      <h1>{name}</h1>
-      <input type="text" value={name} onChange={e=>{setName(e.target.value)}}/>
-      <input type="submit" value='submit'/>
-    </form>
-     </div>
-      );}
+const AddUser = () => {
+   return (
+      <div>
+         <h1>Hello world !</h1>
+      </div>
+   );
+}
 
 export default AddUser;
